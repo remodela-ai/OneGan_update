@@ -15,10 +15,10 @@ def version():
 
 def pip_requirements():
     return [
-        'torchvision',
-        'tensorboardX',
-        'tqdm',
-        'pyyaml',
+        'torchvision==0.15.2',
+        'tensorboardX==2.6.2.2',
+        'tqdm==4.66.5',
+        'PyYAML==6.0.2',
     ]
 
 
@@ -36,11 +36,11 @@ setup(
     keywords='GAN framework',
     install_requires=[
         *pip_requirements(),
-        'numpy',
-        'scipy',
+        'numpy==1.26.4',
+        'scipy==1.14.1',
         # 'opencv',
-        'pillow >= 4.1.1',
-        'torch'
+        'pillow==9.5.0',
+        'torch==2.0.1'
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',
